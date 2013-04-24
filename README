@@ -1,0 +1,98 @@
+ESQUEMA
+1.	TITULO DEL PROYECTO:
+Titulo: Bank-wf
+Company: Infinity24
+
+2.	AREA RESPONSIBLE O EJECUTABLE:
+Área: Sistemas
+Responsable: Anibal Copitan
+
+3.	LOCALIZACION GEOGRAFICA
+Localización: Lima-Perú
+
+4.	DESCRIPCION
+Descripción: 
+En qué consiste el proyecto:
+- Sistema que se encarga de  Recaudar y Acumular el dinero de los usuarios.
+-Emitir préstamos a los usuarios.
+-Estados de cuenta variables.
+Que problemas dio origen al proyecto:
+-Los constantes cálculos que se hacen a fin de mes y  siendo estos repetitivos como por ejemplo:
+	- interés que gana su dinero.
+	-interés que ganar el préstamo.
+	-consultas de su saldo actual.
+Qué solución plantea:
+Organizar los procesos mediante:
+-Acceso a usuario autorizado al sistema.
+-Monitoreo de las acciones de los usuarios dentro del sistema.
+-Alta y Baja de Usuarios
+-Niveles de Acceso.
+-Reportes afines a las necesidades.
+-Reportes de Seguridad y accesos.
+Quienes son los destinatarios:
+ Grupos Familiares medianos y grandes.
+
+5.	JUSTIFICACION 
+La importancia y los beneficios del proyecto:
+Porque será importante:
+•	SEGURIDAD: Por qué tendremos un acceso controlado, monitoreado al sistema, 
+-control total de todos los movimientos que el usuario haga dentro del sistema serán reportados a la persona a cargo de la administración.
+-Usted siempre sabrá:
+	* quienes ingresaron al sistema
+	*a qué hora lo hicieron.
+	*que operaciones realizaron.
+-Este es un reporte diario si usted así lo dispone.
+•	OPERACIÓN:
+-Control total de los usuarios o participantes.
+-Cálculos y demás operaciones para la gestión de pagos y prestamos que se hagan en el sistema
+-Registrar los movimientos, operaciones que realice el usuario.
+-Estado de cuenta mediante reportes  en pdf.
+-Estado de cuenta general del Bank-wf
+
+6.	EFECTOS O CAMBIOS QUE SE DESEAN LOGRAR
+Objetivo general: Eficiente y mejor desempeño Laboral.
+Objetivo Especifico: 
+Fácil acceso, consultas, Informes específicos sobre su patrimonio y Patrimonio General. Así sabrá planificar las operaciones que quiera hacer a mediano y corto plazo en Bank-wf.
+
+7.	INDICADORES
+-Observar los Estado de cuenta o informe de cualquier usuario ACTIVO.
+-Estado de Cuenta de de BANK-WF. (Patrimonio)
+* De 100 usuarios: 
+	-10 tienen préstamos mayores a 100 soles.
+	-20 tienen préstamos mayores a 250 soles.
+	-12 tienen préstamos mayores a 500 soles.
+	-58  no t tienen préstamos.
+
+8.	ACTIVIDADES
+1.	Niveles de Acceso (administrador, usuario)
+2.	Configuración inicial sistema. Date time server and cliente.
+3.	Baja y alta de Usuarios
+4.	Pagos de Acciones
+5.	Emisión y Recaudación de los préstamos: según requerimiento.
+6.	Estado de cuenta Usuario.
+
+9.	RECURSOS
+Humano:
+-1 Developer of App
+Material:
+- Book Motor base de datos PosgreSQL.
+-5 folder.
+-utensilios básicos de oficina.
+-Cuaderno de Notas.
+Equipamiento:
+-PC o laptop.
+-Sistema Operativo Windows 7.
+Financieros:
+-compra artículos de oficina.
+-Consumo de recurso: energía eléctrica,
+-Mantenimiento del servidor propio o comparado varia el costo.
+
+10.	CRONOGRAMAS
+
+Diagram de GANT.. :D
+
+
+
+
+
+Mas documentacion: /docs
