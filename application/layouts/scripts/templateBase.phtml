@@ -1,0 +1,49 @@
+<!-- application/layouts/scripts/layout.phtml -->
+<?php echo $this->doctype() ?>
+<?php //echo $this->jQuery(); ?> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<?php  echo $this->headTitle(); ?>
+
+<?php  echo $this->headMeta(); ?>
+
+<?php echo $this->headLink(); ?>
+
+<?php echo $this->headScript();?>
+
+<script type="text/javascript">
+Ext.Loader.setConfig({ 
+  enabled: true  
+}); 
+Ext.onReady(function(){
+    Ext.MessageBox.confirm('Confirm', 'Welcome your System Lab?', 'hell');
+});
+</script>
+<!-- <script type="text/javascript" src="/scripts/security.js"></script>
+ -->
+<!-- LOAD  -->
+<!-- <script type="text/javascript" src="/scripts/basic/functions_basic.js"></script>
+<script type="text/javascript" src="/scripts/basic/panel_modules.js"></script>
+<script type="text/javascript" src="/scripts/basic/init_module.js"></script>
+ -->
+
+</head>
+<body>
+<div id="header" style="background-color: #EEEEEE; height: 30px;">
+    <div id="header-logo" style="float: left">
+        <b>ZF Quickstart Application</b>
+    </div>
+    <div id="header-navigation" style="float: right">
+        <a href="<?php echo $this->url(
+            array('controller'=>'guestbook'),
+            'default',
+            true) ?>">Guestbook</a>
+    </div>
+</div>
+ 
+<?php 
+    echo $this->layout()->content;
+?>
+ 
+</body>
+</html>
