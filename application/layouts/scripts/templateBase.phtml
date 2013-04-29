@@ -12,12 +12,18 @@
 <?php echo $this->headScript();?>
 
 <script type="text/javascript">
-Ext.Loader.setConfig({ 
-  enabled: true  
-}); 
-Ext.onReady(function(){
-    Ext.MessageBox.confirm('Confirm', 'Welcome your System Lab?', 'hell');
-});
+    // 01 Config variables locales.
+    var __PATH_IMG ="<?php echo PATH_IMG; ?>"; //__PATH_RESOURCES_IMG
+    console.log('__PATH_IMG',__PATH_IMG);
+
+
+    // 02 Config Ext.js
+    Ext.Loader.setConfig({ 
+      enabled: true  
+    }); 
+    // Ext.onReady(function(){
+    //     Ext.MessageBox.confirm('Confirm', 'Welcome your System Lab?', 'functionAction');
+    // });
 </script>
 <!-- <script type="text/javascript" src="/scripts/security.js"></script>
  -->
@@ -28,22 +34,9 @@ Ext.onReady(function(){
  -->
 
 </head>
-<body>
-<div id="header" style="background-color: #EEEEEE; height: 30px;">
-    <div id="header-logo" style="float: left">
-        <b>ZF Quickstart Application</b>
-    </div>
-    <div id="header-navigation" style="float: right">
-        <a href="<?php echo $this->url(
-            array('controller'=>'guestbook'),
-            'default',
-            true) ?>">Guestbook</a>
-    </div>
-</div>
- 
+<body id="docbody">
 <?php 
     echo $this->layout()->content;
-?>
- 
+?> 
 </body>
 </html>

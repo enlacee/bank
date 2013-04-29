@@ -1,43 +1,56 @@
-<style>
-    a:link,
-    a:visited
-    {
-        color: #0398CA;
-    }
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("fieldset#signin_menu").show();
+        
+        $(".signin").click(function(e) {          
+            e.preventDefault();
+            $("fieldset#signin_menu").toggle();
+            $(".signin").toggleClass("menu-open");
+        });
+            
+        $("fieldset#signin_menu").mouseup(function() { return false });
 
-    span#zf-name
-    {
-        color: #91BE3F;
-    }
+        $(document).mouseup(function(e) {
+            // n = $(e.target).parent("a.signin");
+            // console.log(n);
+            if($(e.target).parent("a.signin").length==0) {
+                //$(".signin").removeClass("menu-open");
+                //$("fieldset#signin_menu").hide();
+            }
+        });
+            
+    });
+</script>
 
-    div#welcome
-    {
-        color: #FFFFFF;
-        /*background-image: url(http://framework.zend.com/images/bkg_header.jpg);*/
-        width:  600px;
-        height: 400px;
-        border: 2px solid #444444;
-        overflow: hidden;
-        text-align: center;
-    }
+<div id="container">
 
-    div#more-information
-    {
-        /*background-image: url(http://framework.zend.com/images/bkg_body-bottom.gif);*/
-        height: 100%;
-    }
-</style>
-<div id="welcome">
-    <h1>Welcome to the <span id="zf-name">Zend Framework!</span></h1>
+  <div id="topnav" class="topnav"> Tiene una cuenta? <a href="login" class="signin">
+    <span id ="a__LoginIniciarSesion">Iniciar sesi&oacuten</span></a> </div>
+<div id="login" >  
+  <p><a href="#"><strong>ABOUT US</strong></a></p>
+  
+  <img src="/assets/img/system/png/logo_home.png" width="800px">
 
-    <h3>This is your project's main page</h3>
+  <fieldset id="signin_menu">
+    <form method="post" id="signin" action="">
+      <label for="username">email</label><br>
+      <input id="username" name="username" value="acopitan@gmail.com" title="username" tabindex="4" type="text" size="27">
+      </p>
+      <p>
+        <label for="password">Password</label><br>
+        <input id="password" name="password" value="123" title="password" tabindex="5" type="password" size="28">
+      </p>
+      <p class="remember">
+        <input id="btn__LoginIniciarSesion" class="signin_submit" value="Aceptar" tabindex="6" type="button">
+        <input id="btn__LoginCancelarSesion" class="signin_submit" value="Cancelar" tabindex="7" type="button">        
+        <br>
+        <br>
+        Si usted no tiene acceso, comun&iacutequese con <br>
+        el &aacuterea de soporte.
+      </p>
 
-    <div id="more-information">
-        <p></p>
-        <p>
-            Helpful Links: <br />
-            <a href="http://framework.zend.com/">Zend Framework Website</a> |
-            <a href="http://framework.zend.com/manual/en/">Zend Framework Manual</a>
-        </p>
-    </div>
+    </form>
+  </fieldset>
+</div>
+
 </div>

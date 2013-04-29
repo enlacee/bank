@@ -18,7 +18,9 @@
           <layoutScriptFile layoutName="layout"/>
         </layoutScriptsDirectory>
       </layoutsDirectory>
-      <modelsDirectory/>
+      <modelsDirectory>
+        <modelFile modelName="UserMapper"/>
+      </modelsDirectory>
       <modulesDirectory>
         <moduleDirectory moduleName="default">
           <configsDirectory enabled="false"/>
@@ -64,6 +66,11 @@
             <controllerFile controllerName="User">
               <actionMethod actionName="index"/>
             </controllerFile>
+            <controllerFile controllerName="Index">
+              <actionMethod actionName="index"/>
+              <actionMethod actionName="loginRol"/>
+              <actionMethod actionName="loadCombo"/>
+            </controllerFile>
           </controllersDirectory>
           <formsDirectory enabled="false"/>
           <layoutsDirectory enabled="false">
@@ -73,12 +80,22 @@
             <dbTableDirectory>
               <dbTableFile dbTableName="User"/>
             </dbTableDirectory>
+            <modelFile modelName="UserMapper"/>
           </modelsDirectory>
           <servicesDirectory enabled="false"/>
           <viewsDirectory>
             <viewScriptsDirectory>
               <viewControllerScriptsDirectory forControllerName="User">
                 <viewScriptFile forActionName="index"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Index">
+                <viewScriptFile forActionName="index"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Index">
+                <viewScriptFile forActionName="loginRol"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Index">
+                <viewScriptFile forActionName="loadCombo"/>
               </viewControllerScriptsDirectory>
             </viewScriptsDirectory>
             <viewHelpersDirectory/>
